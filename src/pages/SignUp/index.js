@@ -18,10 +18,10 @@ export default function SignUp() {
   );
 }
 const ContainerStyle = styled(Container)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
 `;
 
 const Logo = styled.div`
