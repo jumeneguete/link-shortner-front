@@ -1,7 +1,7 @@
 import TextField from "@mui/material/TextField";
 import styled from "styled-components";
 
-export default function Input({ label, type, width, value, setValue }) {
+export default function Input({ label, type, width, value, setValue, disabled }) {
   return (
     <StyledTextField
       type={type}
@@ -10,6 +10,7 @@ export default function Input({ label, type, width, value, setValue }) {
       value={value}
       onChange={(e) => setValue(e.target.value)}
       inputwidth={width}
+      disabled={disabled}
     />
   );
 }
